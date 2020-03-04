@@ -1,3 +1,5 @@
+package com.netease.yx.dp.model;
+
 public class Coupon {
     /**
      * 目标金额 满xx
