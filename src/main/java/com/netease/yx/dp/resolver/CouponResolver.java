@@ -16,7 +16,7 @@ public class CouponResolver implements Resolver {
     public List resolve(String content, String source) {
         List<Coupon> coupons = new ArrayList<>();
         Pattern pCoupon1 = Pattern.compile("(每满|满)(\\s)*?((\\d+\\.\\d+)|(\\d+))(\\s)*?(元)?[^\\d]*?减(\\s)*?((\\d+\\.\\d+)|(\\d+))(\\s)*?(元)?");
-        Pattern pCoupon2 = Pattern.compile("((\\d+\\.\\d+)|(\\d+))(元)[^A-Za-z]*?满((\\d+\\.\\d+)|(\\d+))(元)?");
+        Pattern pCoupon2 = Pattern.compile("((\\d+\\.\\d+)|(\\d+))(元)[^A-Za-z\\d]*?满((\\d+\\.\\d+)|(\\d+))(元)?(可用)");
 
         List<String> strs = new ArrayList<>();
         Matcher mCoupon1 = pCoupon1.matcher(content);
@@ -39,7 +39,7 @@ public class CouponResolver implements Resolver {
 
     /**
      * @param couponStr
-     * @param type      1- 满xx减xx 2- xx元 满xx可用
+     * @param type      1- 每满|满xx减xx 2- xx元 满xx可用
      * @return
      */
     private Coupon getCoupon(String couponStr, int type) {
