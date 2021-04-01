@@ -1,0 +1,8 @@
+com\netease\yx\dp\model\Coupon.class
+com\netease\yx\dp\test\Test.class
+com\netease\yx\dp\resolver\PriceResolver.class
+com\netease\yx\dp\udf\OutsidePriceComputeUDF.class
+com\netease\yx\dp\resolver\Resolver.class
+com\netease\yx\dp\resolver\CouponResolver.class
+com\netease\yx\dp\test\CouponTest.class
+com\netease\yx\dp\test\GetPriceTest.class
