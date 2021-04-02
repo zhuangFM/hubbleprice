@@ -39,7 +39,5 @@ public class GetPriceTest {
 
 //        String content = obj.get("tb-property").getAsString();
         System.out.println(new PriceResolver().resolve(priceStr, "tmall"));
-
-
     }
 }

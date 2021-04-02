@@ -1,5 +1,7 @@
 package com.netease.yx.dp.model;
 
+import java.util.List;
+
 /**
  * @author zhuangfengming@corp.netease.com
  * @since 2021-04-01 11:05
@@ -26,6 +28,16 @@ public class Comment {
     private String source;
 
     private String crawlerData;
+
+    private String goodCommnetStr;
+
+    private String poorCommentStr;
+
+    private String generalCommentStr;
+
+    private String afterCommentStr;
+
+    private List logInfo;
 
     public Comment() {
 
@@ -117,5 +129,45 @@ public class Comment {
 
     public void setCrawlerData(String crawlerData) {
         this.crawlerData = crawlerData;
+    }
+
+    public String getGoodCommnetStr() {
+        return goodCommnetStr;
+    }
+
+    public void setGoodCommnetStr(String goodCommnetStr) {
+        this.goodCommnetStr = goodCommnetStr;
+    }
+
+    public String getPoorCommentStr() {
+        return poorCommentStr;
+    }
+
+    public void setPoorCommentStr(String poorCommentStr) {
+        this.poorCommentStr = poorCommentStr;
+    }
+
+    public String getGeneralCommentStr() {
+        return generalCommentStr;
+    }
+
+    public void setGeneralCommentStr(String generalCommentStr) {
+        this.generalCommentStr = generalCommentStr;
+    }
+
+    public String getAfterCommentStr() {
+        return afterCommentStr;
+    }
+
+    public void setAfterCommentStr(String afterCommentStr) {
+        this.afterCommentStr = afterCommentStr;
+    }
+
+    public List getLogInfo() {
+        return logInfo;
+    }
+
+    public void setLogInfo(List logInfo) {
+        this.logInfo = logInfo;
     }
 }
